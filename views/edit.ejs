@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Edit</title>
+</head>
+<body>
+    <h1>更新フォーム</h1>
+    <form action="/update/<%= property[0].id %>" method="POST">
+        id <input type="text" name="id" value="<%= property[0].id %>"><br>
+        名称 <input type="text" name="名称" value="<%= property[0].名称 %>"><br>
+        種類 <input type="text" name="種類" value="<%= property[0].種類 %>"><br>
+        構造 <input type="text" name="構造" value="<%= property[0].構造 %>"><br>
+        階高 <input type="text" name="階高" value="<%= property[0].階高 %>"><br>
+        地下 <input type="text" name="地下" value="<%= property[0].地下 %>"><br>
+        国 <input type="text" name="国" value="<%= property[0].国 %>"><br>
+        都道府県 <input type="text" name="都道府県" value="<%= property[0].都道府県 %>"><br>
+        住所1 <input type="text" name="住所1" value="<%= property[0].住所1 %>"><br>
+        住所2 <input type="text" name="住所2" value="<%= property[0].住所2 %>"><br>
+        郵便番号 <input type="text" name="郵便番号" value="<%= property[0].郵便番号 %>"><br>
+        戸数 <input type="text" name="戸数" value="<%= property[0].戸数 %>"><br>
+        交通アクセス1 <input type="text" name="交通アクセス1" value="<%= property[0].交通アクセス1 %>"><br>
+        交通アクセス2 <input type="text" name="交通アクセス2" value="<%= property[0].交通アクセス2 %>"><br>
+        築年月 <input type="text" name="築年月" value="<%= property[0].築年月 %>"><br>
+        建設会社 <input type="text" name="建設会社" value="<%= property[0].建設会社 %>"><br>
+        設計 <input type="text" name="設計" value="<%= property[0].設計 %>"><br>
+        所有者 <input type="text" name="所有者" value="<%= property[0].所有者 %>"><br>
+        アセットマネジメント会社 <input type="text" name="アセットマネジメント会社" value="<%= property[0].アセットマネジメント会社 %>"><br>
+        プロパティマネジメント会社 <input type="text" name="プロパティマネジメント会社" value="<%= property[0].プロパティマネジメント会社 %>"><br>
+        管理会社 <input type="text" name="管理会社" value="<%= property[0].管理会社 %>"><br>
+        敷地面積 <input type="text" name="敷地面積" value="<%= property[0].敷地面積 %>"><br>
+        建築面積 <input type="text" name="建築面積" value="<%= property[0].建築面積 %>"><br>
+        延床面積 <input type="text" name="延床面積" value="<%= property[0].延床面積 %>"><br>
+        <button type="submit">更新</button>
+    </form>
+</body>
+</html>
