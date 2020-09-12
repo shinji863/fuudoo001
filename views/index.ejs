@@ -3,68 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Fuudoo Property list</title>
+	<link rel="stylesheet" href="/public/css/styles.css" >
 </head>
 <body>
-    <p><a href="/create">Property追加</a></p>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>名称</th>
-            <th>種類</th>
-            <th>構造</th>
-            <th>階高</th>
-            <th>地下</th>
-            <th>国</th>
-            <th>都道府県</th>
-            <th>住所1</th>
-            <th>住所2</th>
-            <th>郵便番号</th>
-            <th>戸数</th>
-            <th>交通アクセス1</th>
-            <th>交通アクセス2</th>
-            <th>築年月</th>
-            <th>建設会社</th>
-            <th>設計</th>
-            <th>所有者</th>
-            <th>アセットマネジメント会社</th>
-            <th>プロパティマネジメント会社</th>
-            <th>管理会社</th>
-            <th>敷地面積</th>
-            <th>建築面積</th>
-            <th>延床面積</th>
-            <th>更新</th>
-            <th>削除</th>
-        </tr>
-        <% properties.forEach(function (value) { %>
-        <tr>
-            <td><%= value.id %></td>
-            <td><%= value.名称 %></td>
-            <td><%= value.種類 %></td>
-            <td><%= value.構造 %></td>
-            <td><%= value.階高 %></td>
-            <td><%= value.地下 %></td>
-            <td><%= value.国 %></td>
-            <td><%= value.都道府県 %></td>
-            <td><%= value.住所1 %></td>
-            <td><%= value.住所2 %></td>
-            <td><%= value.郵便番号 %></td>
-            <td><%= value.戸数 %></td>
-            <td><%= value.交通アクセス1 %></td>
-            <td><%= value.交通アクセス2 %></td>
-            <td><%= value.築年月 %></td>
-            <td><%= value.建設会社 %></td>
-            <td><%= value.設計 %></td>
-            <td><%= value.所有者 %></td>
-            <td><%= value.アセットマネジメント会社 %></td>
-            <td><%= value.プロパティマネジメント会社 %></td>
-            <td><%= value.管理会社 %></td>
-            <td><%= value.敷地面積 %></td>
-            <td><%= value.建築面積 %></td>
-            <td><%= value.延床面積 %></td>
-            <td><a href="/edit/<%= value.id %>">更新</a></td>
-            <td><a href="/delete/<%= value.id %>">削除</a></td>
-        </tr>
-        <% }); %>
-    </table>
+    <header>
+		<div class="container">
+			<div class="icon">
+			<img src="/public/img/3670092_s.jpg" width="120" height="120" alt="サイトのアイコン画像">
+			</div>
+				<div class="info">
+					<h1>FuuDoo</h1>
+					<p>Property Management</p>
+					<!-- <ul>
+						<li>
+							<a href="https://dotinstall.com" target="_blank">
+								<img src="img/photos.png" width="20" height="20" alt="写真サイトへのリンク画像です">
+							</a>
+						</li>
+						<li>
+							<a href="https://dotinstall.com" target="_blank">
+								<img src="img/blog.png" width="20" height="20" alt="ブログサイトへのリンク画像です">
+							</a>
+						</li>
+					</ul> -->
+				</div>
+			</div>
+        </header>
+        
+    <p><a href="/create">Add Property</a></p>
+
+    <div class="scroll-table">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>名称</th>
+                <th>種類</th>
+                <th>構造</th>
+                <th>階高</th>
+                <th>地下</th>
+                <th>国</th>
+                <th>都道府県</th>
+                <th>住所1</th>
+                <th>住所2</th>
+                <th>郵便番号</th>
+                <th>戸数</th>
+                <th>交通アクセス1</th>
+                <th>交通アクセス2</th>
+                <th>築年月</th>
+                <th>建設会社</th>
+                <th>設計</th>
+                <th>所有者</th>
+                <th>アセットマネジメント会社</th>
+                <th>プロパティマネジメント会社</th>
+                <th>管理会社</th>
+        
+                <th>敷地面積</th>
+                <th>建築面積</th>
+                <th>延床面積</th>
+                <th>更新</th>
+                <th>削除</th>
+            </tr>
+            <% properties.forEach(function (value) { %>
+            <tr>
+                <td><%= value.id %></td>
+                <td><%= value.名称 %></td>
+                <td><%= value.種類 %></td>
+                <td><%= value.構造 %></td>
+                <td><%= value.階高 %></td>
+                <td><%= value.地下 %></td>
+                <td><%= value.国 %></td>
+                <td><%= value.都道府県 %></td>
+                <td><%= value.住所1 %></td>
+                <td><%= value.住所2 %></td>
+                <td><%= value.郵便番号 %></td>
+                <td><%= value.戸数 %></td>
+                <td><%= value.交通アクセス1 %></td>
+                <td><%= value.交通アクセス2 %></td>
+                <td><%= value.築年月 %></td>
+                <td><%= value.建設会社 %></td>
+                <td><%= value.設計 %></td>
+                <td><%= value.所有者 %></td>
+                <td><%= value.アセットマネジメント会社 %></td>
+                <td><%= value.プロパティマネジメント会社 %></td>
+                <td><%= value.管理会社 %></td>
+                <td><%= value.敷地面積 %></td>
+                <td><%= value.建築面積 %></td>
+                <td><%= value.延床面積 %></td>
+                <td><a href="/edit/<%= value.id %>">更新</a></td>
+                <td><a href="/delete/<%= value.id %>">削除</a></td>
+            </tr>
+            <% }); %>
+        </table>
+    </div>
 </body>
 </html>

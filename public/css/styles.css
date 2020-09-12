@@ -1,0 +1,67 @@
+body {
+	color: lightgray;
+	height: 100vh; /* 全画面表示 */
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+	/* background-image: url("/public/img/706095_l.jpg"); */
+	background-color: black;
+}
+
+head {
+ color: white;
+}
+
+header {
+	color: white;
+	background-color: black;
+	background-image: url("/public/img/947351_m.jpg");
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.container {
+	/* background-color: pink; */
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	/* background-color: skyblue; */
+}
+
+.icon img {
+	/* border-radius: 20px; */
+	border-radius: 50%;
+	border-width: 4px;
+	border-style: solid;
+	border-color: gray;
+}
+
+.info {
+	/* background-color: tomato; */
+	margin-left: 32px;
+}
+
+
+.info h1 {
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0;
+}
+
+.info p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 16px;
+}
+
+.scroll-table {
+  overflow: auto;
+  white-space: nowrap;
+}

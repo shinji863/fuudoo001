@@ -7,6 +7,8 @@ const port = 3000
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use("/public", express.static(__dirname + "/public"));
+
 const mysql = require('mysql');
 
 const con = mysql.createConnection({
